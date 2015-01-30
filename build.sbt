@@ -14,3 +14,5 @@ libraryDependencies ++= Seq(
   "org.webjars" % "flot" % "0.8.0",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.4" % "test"
 )
+
+libraryDependencies += "com.google.inject" % "guice" % "3.0"
