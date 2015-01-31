@@ -11,26 +11,26 @@ import java.io.Serializable;
 public class StockItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private final String symbol;
-	private final String price;
-	private final long time;
+	private final String ticker;
+	private final float price;
+	private final String time;
 
-	public StockItem(String symbol, String price, long time) {
+	public StockItem(String symbol, float price, String time) {
 		super();
-		this.symbol = symbol;
+		this.ticker = symbol;
 		this.price = price;
 		this.time = time;
 	}
 
 	public String getSymbol() {
-		return symbol;
+		return ticker;
 	}
 
-	public String getPrice() {
+	public float getPrice() {
 		return price;
 	}
 
-	public long getTime() {
+	public String getTime() {
 		return time;
 	}
 }
