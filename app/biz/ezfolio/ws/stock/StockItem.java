@@ -12,13 +12,13 @@ public class StockItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private final String ticker;
-	private final float price;
+	private final float last;
 	private final String time;
 
 	public StockItem(String symbol, float price, String time) {
 		super();
 		this.ticker = symbol;
-		this.price = price;
+		this.last = price;
 		this.time = time;
 	}
 
@@ -26,8 +26,8 @@ public class StockItem implements Serializable {
 		return ticker;
 	}
 
-	public float getPrice() {
-		return price;
+	public float getLast() {
+		return last;
 	}
 
 	public String getTime() {
