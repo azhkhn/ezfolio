@@ -12,7 +12,7 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 
 /**
- * Unit test for {@link YahooTickerService}
+ * Unit test for {@link SimpleTickerService}
  * 
  * @author lweeraratne
  *

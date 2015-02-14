@@ -18,3 +18,7 @@ libraryDependencies ++= Seq(
 libraryDependencies += "com.google.inject" % "guice" % "3.0"
 
 libraryDependencies += "com.google.code.gson" % "gson" % "1.7.1"
+
+libraryDependencies ++= Seq(
+  javaWs
+)

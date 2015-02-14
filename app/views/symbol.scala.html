@@ -1,9 +1,9 @@
 @(stock: biz.ezfolio.ws.stock.StockItem)
 <HTML>
 <HEAD>
-	<title>@stock.getSymbol()</title>
+	<title>@stock.getName()</title>
 </HEAD>
 <BODY>
-	@stock.getSymbol() : @stock.getLast()
+	@stock.getSymbol() : @stock.getLastPrice()
 </BODY>
 </HTML>

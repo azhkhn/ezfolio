@@ -3,7 +3,7 @@ package biz.ezfolio.ws.stock;
 import java.io.Serializable;
 
 /**
- * Details for a given stock symbol  at a given point in time.
+ * Details for a given stock symbol at a given point in time.
  * 
  * @author lweeraratne
  *
@@ -11,26 +11,32 @@ import java.io.Serializable;
 public class StockItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private final String ticker;
-	private final float last;
-	private final String time;
+	private String Name;
+	private float LastPrice;
+	private String Symbol;
 
-	public StockItem(String symbol, float price, String time) {
-		super();
-		this.ticker = symbol;
-		this.last = price;
-		this.time = time;
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public float getLastPrice() {
+		return LastPrice;
+	}
+
+	public void setLastPrice(float lastPrice) {
+		this.LastPrice = lastPrice;
 	}
 
 	public String getSymbol() {
-		return ticker;
+		return Symbol;
 	}
 
-	public float getLast() {
-		return last;
+	public void setSymbol(String symbol) {
+		Symbol = symbol;
 	}
 
-	public String getTime() {
-		return time;
-	}
 }

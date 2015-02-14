@@ -14,7 +14,7 @@ public class GuiceJUnitModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		bind(TickerService.class).to(YahooTickerService.class);
+		bind(TickerService.class).to(SimpleTickerService.class);
 		bind(HttpClient.class).to(DefaultHttpClient.class);
 	}
 
